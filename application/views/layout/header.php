@@ -63,7 +63,40 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <a href="<?= base_url() ?>" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
-                                    Buku
+                                    Product
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url() ?>category" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Category
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url() ?>transaction" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Transaction
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="<?= base_url() ?>user" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    User
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="<?= base_url() ?>auth/logout" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Logout
                                 </p>
                             </a>
                         </li>
