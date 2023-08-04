@@ -15,5 +15,3 @@ Deskripsi Aplikasi
 3. CRUD User berisi kolom untuk mengisi data user yang terdiri dari tambah, edit, lihat, dan delete
 
 4. Halaman Logout, bila klik bagian Logout maka kembali ke halaman login
-
-Terima Kasih
