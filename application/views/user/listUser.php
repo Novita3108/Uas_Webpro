@@ -7,8 +7,6 @@
             <div class="container">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-            
-                   
 
                     <?php
                     if($this->session->flashdata('edit')=="sukses"){
@@ -25,10 +23,8 @@
                         echo '<div class="alert alert-danger">Data user gagal di hapus</div>';
                     }
                     ?>
-
-
                         <h1 class="m-0">List user</h1>
-                        <a href="user/tambah/"class="btn btn-primary"> Tambah user </a>
+                        <a href="user/add/"class="btn btn-primary"> Tambah user </a>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
@@ -51,6 +47,7 @@
                             <tr>
                                 <th>No</th>
                                 <th>Username</th>
+                                <th>Email</th>
                                 <th>action</th>
                             </tr>
                         </thead>
@@ -62,10 +59,11 @@
                             <tr>
                                 <td><?php echo $no++; ?></td>
                                 <td><?php echo $user->username; ?> </td>
+                                <td><?php echo $user->email; ?> </td>
                                 <td class="actions">
-                                    <a href="user/lihat/<?php echo $user->id; ?>">Lihat</a>
+                                    <a href="user/detail/<?php echo $user->id; ?>">Lihat</a>
                                     <a href="user/edit/<?php echo $user->id; ?>" class="edit">Edit</a>
-                                    <a href="user/hapus/<?php echo $user->id; ?>" onclick="return confirm('Yakin dihapus?')"class="delete">Delete</a>
+                                    <a href="user/delete/<?php echo $user->id; ?>" onclick="return confirm('Yakin dihapus?')"class="delete">Delete</a>
                                 </td>
                             </tr>
                             <?php endforeach; ?>

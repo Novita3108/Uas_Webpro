@@ -7,4 +7,8 @@ class CategoryModel extends CI_Model {
        return $this->db->get('tb_category')->result();
     }
 
+
+    public function getCategory($categoryId) {
+       return $this->db->get_where('tb_category', ['id' => $categoryId])->row();
+    }
 }

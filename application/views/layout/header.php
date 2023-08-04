@@ -8,7 +8,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Perpustakaan</title>
+    <title>My Store</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -33,7 +33,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="<?= base_url() ?>" class="brand-link">
-                <span class="brand-text font-weight-light">Perpustakaan</span>
+                <span class="brand-text font-weight-light">My Store</span>
             </a>
 
             <!-- Sidebar -->
@@ -42,9 +42,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="info">
                     <div class="image">
-          <img src="<?php echo base_url(); ?>assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-        </div>
-                        <a href="#" class="d-block">Novita Murliani</a>
+                    <img src="<?php echo base_url(); ?>assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>  
+                        <a href="#" class="d-block"><?= $this->session->userdata('email'); ?></a>
                         <div class="badge-online d-flex align-items-center">
                             <span
                                 style="width: 10px; height: 10px ; margin-right: 10px; background: green; border-radius: 100%; display: block"></span>
@@ -61,7 +61,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                with font-awesome or any other icon font library -->
                         <li class="nav-item">
                             <a href="<?= base_url() ?>" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                                <i class="nav-icon fa fa-book"></i>
                                 <p>
                                     Product
                                 </p>
@@ -77,7 +77,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </li>
                         <li class="nav-item">
                             <a href="<?= base_url() ?>transaction" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                                <i class="nav-icon fa fa-shopping-cart"></i>
                                 <p>
                                     Transaction
                                 </p>
@@ -85,7 +85,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </li>
                         <li class="nav-item">
                             <a href="<?= base_url() ?>user" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                                <i class="nav-icon fa fa-user"></i>
                                 <p>
                                     User
                                 </p>
@@ -94,7 +94,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                         <li class="nav-item">
                             <a href="<?= base_url() ?>auth/logout" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                                <i class="nav-icon fa fa-th"></i>
                                 <p>
                                     Logout
                                 </p>

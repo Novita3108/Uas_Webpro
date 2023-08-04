@@ -7,4 +7,8 @@ class UserModel extends CI_Model {
        return $this->db->get('tb_user')->result();
     }
 
+     public function getUser($userId){
+       return $this->db->get_where('tb_user', ['id' => $userId])->row();
+    }
+
 }

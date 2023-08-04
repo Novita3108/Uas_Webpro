@@ -27,11 +27,6 @@ class Buku extends CI_controller
         $this->load->view('layout/footer', $data);
     }
 
-    public function judul()
-    {
-        echo "ini function judul ()";
-    }
-
     public function tambah()
     {
         $data['konten'] = "buku/tambah";
@@ -102,16 +97,18 @@ class Buku extends CI_controller
             redirect('buku');
          };
      }
-        public function hapus($kode){
-            $hapus = $this->db->delete ('tbuku', array('kode_buku' =>$kode));
 
-            if ($hapus){
-                //echo "Berhasil di simpan ";
-                $this->session->set_flashdata('hapus', 'sukses');
-                redirect('buku');
-            }else{
-                $this->session->set_flashdata('hapus', 'gagal');
-                redirect('buku');
-            };
-        }
+
+    public function hapus($kode){
+        $hapus = $this->db->delete ('tbuku', array('kode_buku' =>$kode));
+
+        if ($hapus){
+            //echo "Berhasil di simpan ";
+            $this->session->set_flashdata('hapus', 'sukses');
+            redirect('buku');
+        }else{
+            $this->session->set_flashdata('hapus', 'gagal');
+            redirect('buku');
+        };
     }
+}

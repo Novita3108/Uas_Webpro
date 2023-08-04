@@ -26,7 +26,7 @@
 
 
                         <h1 class="m-0">List category</h1>
-                        <a href="category/tambah/"class="btn btn-primary"> Tambah category </a>
+                        <a href="category/add/"class="btn btn-primary"> Tambah category </a>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
@@ -63,9 +63,9 @@
                                 <td><?php echo $category->title; ?> </td>
                                 <td><?php echo $category->description; ?></td>
                                 <td class="actions">
-                                    <a href="category/lihat/<?php echo $category->id; ?>">Lihat</a>
+                                    <a href="category/detail/<?php echo $category->id; ?>">Lihat</a>
                                     <a href="category/edit/<?php echo $category->id; ?>" class="edit">Edit</a>
-                                    <a href="category/hapus/<?php echo $category->id; ?>" onclick="return confirm('Yakin dihapus?')"class="delete">Delete</a>
+                                    <a href="category/delete/<?php echo $category->id; ?>" onclick="return confirm('Yakin dihapus?')"class="delete">Delete</a>
                                 </td>
                             </tr>
                             <?php endforeach; ?>
